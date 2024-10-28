@@ -9,7 +9,7 @@ if(-not (Get-Module Devolutions.PowerShell -ListAvailable)){
 }
 
 # Adapt the data source name
-$ds = Get-RDMDataSource -Name "NameOfYourDataSourceHere"
+$ds = Get-RDMDataSource -Name "167"
 Set-RDMCurrentDataSource $ds
 
 #create credential
@@ -19,7 +19,7 @@ Set-RDMSession $creds -Refresh
 Set-RDMSessionPassword -ID $creds.ID -Password (ConvertTo-SecureString "test123$" -AsPlainText -Force)
 
 #create rdp using the credential from above
-$rdp = New-RDMSession -Name "$computername" -Type RDPConfigured -Group "Machines"
+$rdp = New-RDMSession -Name "computername" -Type RDPConfigured -Group "Machines"
 $rdp.Host = "192.168.1.1" #IP of machine
 $rdp.CredentialConnectionID = $creds.ID
 

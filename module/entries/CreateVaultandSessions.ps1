@@ -22,7 +22,7 @@ function CreateVaultsandSessions
       )
 
     # Update the data source name here
-    $ds = Get-RDMDataSource -Name 'YourDataSourceNameHere'
+    $ds = Get-RDMDataSource -Name '167'
     Set-RDMCurrentDataSource $ds
     Update-RDMUI
 

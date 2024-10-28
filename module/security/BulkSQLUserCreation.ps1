@@ -36,7 +36,7 @@ if(-not (Get-Module Devolutions.PowerShell -ListAvailable)){
 #---------------------------------[Execution]----------------------------------
 
 ### Connect to the SQL Data Source
-$ds = Get-RDMDataSource -Name "YourSQLDataSourceNameHere"
+$ds = Get-RDMDataSource -Name "51"
 Set-RDMCurrentDataSource $ds
 Update-RDMUI
 

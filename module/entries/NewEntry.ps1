@@ -10,13 +10,13 @@ if(-not (Get-Module Devolutions.PowerShell -ListAvailable)){
 }
 
 # Adapt the data source name
-$ds = Get-RDMDataSource -Name "NameOfYourDataSourceHere"
+$ds = Get-RDMDataSource -Name "Local Data Source"
 Set-RDMCurrentDataSource $ds
 
-$computerName = "windjammer10";
+$computerName = "newvm";
 $theusername = "david";
-$thedomain = "windjammer";
-$thepassword = "<<strong password>>";
+$thedomain = "newvm";
+$thepassword = "sssd!33%fg!dgh";
 $session = New-RDMSession -Host $computerName -Type "RDPConfigured" -Name $computerName;
 Set-RDMSession -Session $session -Refresh;
 <# 

@@ -1,7 +1,7 @@
 #source https://forum.devolutions.net/topics/34248/cant-get-powershell-module-to-work-stable
 
 #dataource name
-$rdm_datasource_name = My-datasorce
+$rdm_datasource_name = cjgsir
 
 
 #check if RDM PS module is installed
